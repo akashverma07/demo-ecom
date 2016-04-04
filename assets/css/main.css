@@ -1,0 +1,87 @@
+body {
+  font-family: 'Merriweather', serif;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size:1.5rem;
+  font-weight:900;
+  line-height:1.5rem;
+  letter-spacing:0.15rem;
+  text-transform:uppercase;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-weight:900;
+  font-size:1.2rem;
+  letter-spacing:0.15rem;
+  text-transform:uppercase;
+  padding:0.8rem 0 0.6rem;
+}
+
+h3 {
+  font-weight:900;
+  font-size:1.1rem;
+  letter-spacing:0.10rem;
+  text-transform:uppercase;
+  padding:0.8rem 0 0.6rem;
+}
+
+h5 {
+  font-weight:900;
+  font-size:1.0rem;
+  letter-spacing:0.10rem;
+  text-transform:uppercase;
+}
+
+header {
+  text-align:center;
+  border-bottom:1px solid #EEE;
+}
+
+header h1 {
+  background:none;
+  color:#333;
+  padding:0.8rem 0 0.6rem;
+  margin:0;
+}
+
+header h1 a {
+  color:#333;
+}
+
+header h1 a:hover {
+  color:#AAA;
+}
+
+section {
+  padding:0.8rem 0 0.6rem;
+  margin:0;
+}
+
+section h2 {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-weight:900;
+  font-size:1.2rem;
+  font-weight:900;
+  letter-spacing:0.10rem;
+  text-transform:uppercase;
+}
+
+#cart {
+    position: relative;
+}
+
+#cart img {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    height: 2rem;
+}
+
+#hero {
+  padding:0 0 0.6rem;
+}

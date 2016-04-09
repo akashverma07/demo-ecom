@@ -125,10 +125,42 @@
       </div>
     </section>
 
+    <div id="email-subscription" class="overlay">
+      <div class="form">
+        <form>
+        <div class="row">
+          <div class="large-12 medium-12 small-12 columns">
+            <h4>The Terminus Hot List</h4>
+            <p>Don't miss out on our new products, sign up below</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-8 medium-8 small-12 columns">
+            <input type="email" placeholder="e.g. name@example.com"/>
+          </div>
+          <div class="large-4 medium-4 small-12 columns">
+            <button>Signup</button>
+          </div>
+        </div>
+        </form>
+      </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
     <script>
-          £(document).foundation();
+          $(document).foundation();
+    </script>
+
+    <script>
+      $(document).mouseleave(function () {
+        console.log("yes");
+        permutive.query("CartAbandon", function(state) {
+          if (state.result) {
+             $("#email-subscription").show();
+          }
+        });
+      });
     </script>
 
   </body>

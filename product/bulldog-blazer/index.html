@@ -13,6 +13,12 @@
     <link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css"/>
     <link rel="stylesheet" href="/assets/css/main.css" />
 
+    <!-- Permutive JavaScript SDK
+      TODO: Add your own PROJECT_ID and API_KEY BELOW
+    -->
+    <script type="text/javascript">!function(t,e){e||(e=e||{},window.permutive=e,e.q=[],version="1.0",e.init=function(n,r,i){e.config={projectId:n,apiKey:r,environment:i||"production"};for(var o=["addon","defineEntities","events","identify","track","trigger","query","ready"],a=0;a<o.length;a++){var c=o[a];e[c]=function(t){return function(){var n=Array.prototype.slice.call(arguments,0);e.q.push({functionName:t,arguments:n})}}(c)}var p=t.createElement("script");p.type="text/javascript",p.async=!0;var s="https:"==t.location.protocol?"https://d3alqb8vzo7fun.cloudfront.net":"http://cdn.permutive.com";"development"===i&&(s="https://s3.amazonaws.com/cdn.permutive.com"),p.src=s+"/"+n+"-"+version+".js";var u=t.getElementsByTagName("script")[0];u.parentNode.insertBefore(p,u)})}(document,window.permutive),permutive.init("PROJECT_ID","API_KEY");</script>
+    <!-- end Permutive -->
+
   </head>
 
   <body>
@@ -43,6 +49,43 @@
         </div>
       </div>
     </section>
+
+    <div id="email-subscription" class="overlay">
+      <div class="form">
+        <form>
+        <div class="row">
+          <div class="large-12 medium-12 small-12 columns">
+            <h4>The Terminus Hot List</h4>
+            <p>Don't miss out on our new products, sign up below</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-8 medium-8 small-12 columns">
+            <input type="email" placeholder="e.g. name@example.com"/>
+          </div>
+          <div class="large-4 medium-4 small-12 columns">
+            <button>Signup</button>
+          </div>
+        </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+    <script>
+          $(document).foundation();
+    </script>
+
+    <script>
+      $(document).mouseleave(function () {
+        permutive.query("EngagedCustomer", function(state) {
+          if (state.result) {
+             $("#email-subscription").show();
+          }
+        });
+      });
+    </script>
 
   </body>
 

@@ -15,7 +15,8 @@ Terminus is our demo ecommerce site for Permutive. It's a static store made up o
 ## Permutive & Terminus
 
 1. Blank Site
-2. Basic Integration
+2. [Basic Integration](https://github.com/permutive/demo-ecom/tree/basic-integration)
+3. [Query State](https://github.com/permutive/demo-ecom/tree/query-state)
 
 ## Further Reading
 

@@ -1,8 +1,9 @@
 ## Terminus
 
 Terminus is our demo ecommerce site for Permutive. It's a static store made up of 12 different products.
+This branch uses `permutive.query` to determine whether the user meets the criteria of a segment, then shows an email capture overlay when they leave the page.
 
-## Getting Started with Query State
+## Getting Started
 
 1. Download the Branch
 

@@ -3,6 +3,8 @@
 Terminus is our demo ecommerce site for Permutive. It's a static store made up of 12 different products.
 This branch contains the static pages only.
 
+There's an accompanying [blog post](http://blog.permutive.com/realtime-personalisation-for-ecommerce/) explaining what's been built in each branch.
+
 ## Quick Start
 
 1. Download the Branch

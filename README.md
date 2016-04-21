@@ -1,8 +1,9 @@
 ## Terminus
 
 Terminus is our demo ecommerce site for Permutive. It's a static store made up of 12 different products.
+This branch includes the Permutive SDK in the head of all html pages.
 
-## Getting Started with Event Stream
+## Quick Start
 
 1. Download the Branch
 
@@ -18,6 +19,7 @@ Terminus is our demo ecommerce site for Permutive. It's a static store made up o
 
 1. [Blank Site](https://github.com/permutive/demo-ecom)
 2. Basic Integration
+3. [Query State](https://github.com/permutive/demo-ecom/tree/query-state)
 
 ## Further Reading
 

@@ -19,6 +19,16 @@
     <script type="text/javascript">!function(t,e){e||(e=e||{},window.permutive=e,e.q=[],version="1.0",e.init=function(n,r,i){e.config={projectId:n,apiKey:r,environment:i||"production"};for(var o=["addon","defineEntities","events","identify","track","trigger","query","ready"],a=0;a<o.length;a++){var c=o[a];e[c]=function(t){return function(){var n=Array.prototype.slice.call(arguments,0);e.q.push({functionName:t,arguments:n})}}(c)}var p=t.createElement("script");p.type="text/javascript",p.async=!0;var s="https:"==t.location.protocol?"https://d3alqb8vzo7fun.cloudfront.net":"http://cdn.permutive.com";"development"===i&&(s="https://s3.amazonaws.com/cdn.permutive.com"),p.src=s+"/"+n+"-"+version+".js";var u=t.getElementsByTagName("script")[0];u.parentNode.insertBefore(p,u)})}(document,window.permutive),permutive.init("PROJECT_ID","API_KEY");</script>
     <!-- end Permutive -->
 
+    <script>
+      function trackBuy(itemInput, priceInput) {
+        permutive.track('Purchase', {
+          'item': itemInput,
+          'price': priceInput
+        });
+        console.log('Purchase Complete')
+      }
+    </script>
+
   </head>
 
   <body>
@@ -45,7 +55,7 @@
         <div class="medium-6 columns">
           <h3>Tibetan Mastiff Tuxedo - £400</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan ex justo. Quisque lacus odio, fermentum et egestas sed, sollicitudin non diam. Curabitur laoreet ornare tortor, a hendrerit justo pretium non. Sed mi metus, suscipit sit amet maximus non, vestibulum ut turpis. Nam a ultrices ligula. Etiam est nisl, convallis non nulla et, elementum commodo massa.</p>
-          <a href="#buy" class="button large expanded">Buy Now</a>
+          <a href="#buy" class="button large expanded" onclick="trackBuy('Tibetan Mastiff Tuxedo', 400)">Buy Now</a>
         </div>
       </div>
     </section>

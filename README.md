@@ -20,6 +20,7 @@ There's an accompanying [blog post](http://blog.permutive.com/realtime-personali
 1. Blank Site
 2. [Basic Integration](https://github.com/permutive/demo-ecom/tree/basic-integration)
 3. [Query State](https://github.com/permutive/demo-ecom/tree/query-state)
+4. [Purchase Event](https://github.com/permutive/demo-ecom/tree/purchase-event)
 
 ## Further Reading
 

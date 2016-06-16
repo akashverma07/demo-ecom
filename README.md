@@ -9,7 +9,7 @@ This branch uses `permutive.query` to determine whether the user meets the crite
 
 2. Execute `bash sdksetup.sh` and follow instructions to replace the `PROJECT_ID` and `API_KEY` in each of the html files with your own. Alternatively, you can do this manually.
 
-3. Set up a query to return `TRUE` or `FALSE` named `EngagedCustomer`.
+3. Set up a Segment called `EngagedCustomer`.
 
 4. Navigate to the root folder in your console
 
